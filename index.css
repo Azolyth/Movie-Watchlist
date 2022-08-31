@@ -8,7 +8,7 @@ body {
   width: 700px;
   height: 100vh;
   margin: 0 auto;
-  background: #ccc;
+  background: #fff;
 }
 
 header {
@@ -16,7 +16,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: whitesmoke;
+  background: grey;
   border: 2px solid paleturquoise;
 }
 
@@ -29,7 +29,7 @@ form {
   display: flex;
   justify-content: center;
   position: relative;
-  margin: -1.5em;
+  margin-top: -1.5em;
 }
 
 .search-input {
@@ -49,6 +49,7 @@ form {
   display: flex;
   width: 100%;
   height: 200px;
+  margin: 4em 2.5em;
 }
 
 .movie-title-rating {
