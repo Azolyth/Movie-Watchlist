@@ -9,14 +9,21 @@
   </head>
   <body>
     <div class="container">
-      <header id="nav">
-        <h1>Find your film</h1>
-        <h2>My watchlist</h2>
-        <form action="">
-          <input id="search-input" type="text" placeholder="Search for a movie" />
-          <button id="search-btn">Search</button>
-        </form>
+      <header>
+        <nav>
+          <h1>Find your film</h1>
+          <h2>My watchlist</h2>
+        </nav>
       </header>
+      <form action="">
+        <input
+          class="search-input"
+          id="search-input"
+          type="text"
+          placeholder="Search for a movie"
+        />
+        <button class="search-btn" id="search-btn">Search</button>
+      </form>
       <main id="watchlist" class="watchlist"></main>
     </div>
     <script src="./index.js"></script>
