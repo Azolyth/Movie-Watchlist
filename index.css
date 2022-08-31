@@ -2,17 +2,23 @@ body {
   margin: 0;
   padding: 0;
   background: whitesmoke;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
 }
+
+/* Layout */
 
 .container {
   width: 700px;
   height: 100vh;
   margin: 0 auto;
   background: #fff;
+  color: #222;
 }
 
 header {
-  height: 20vh;
+  height: 225px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,13 +42,15 @@ form {
   padding: 1.2em 11em;
   border-radius: 5px 0 0 5px;
   border: none;
+  box-shadow: 1px 1px 5px #ccc;
 }
 
 .search-btn {
   padding: 0em 4em;
   cursor: pointer;
-  border-radius: 0 5px 5px 0;
   border: none;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 1px 1px 5px #ccc;
 }
 
 .movie-card {
@@ -60,6 +68,7 @@ form {
 .movie-info {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 
 .watchlist-remove-btn {
@@ -68,4 +77,22 @@ form {
   cursor: pointer;
   padding: 0;
   margin: 0;
+}
+
+/* Typography  */
+
+h1 {
+  font-weight: 800;
+  font-size: 2.9rem;
+  margin-top: 0;
+}
+
+.movie-rating {
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.275em;
 }
