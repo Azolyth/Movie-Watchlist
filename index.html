@@ -18,21 +18,19 @@
       <header>
         <nav>
           <h1>Find your film</h1>
-          <h3>My watchlist</h3>
+          <h3><a class="page-link" href="./watchlist.html">My Watchlist</a></h3>
         </nav>
       </header>
-      <form action="">
+      <form>
         <input
           class="search-input"
           id="search-input"
           type="text"
           placeholder="Search for a movie"
         />
-        <button class="search-btn" id="search-btn">Search</button>
+        <button type="button" class="search-btn" id="search-btn">Search</button>
       </form>
-      <main id="watchlist" class="watchlist">
-        <h2>Start exploring</h2>
-      </main>
+      <main id="search-list" class="watchlist"></main>
     </div>
     <script src="./index.js"></script>
   </body>
