@@ -41,12 +41,13 @@ const displayMovies = (movies) => {
   document.getElementById('watchlist-btn').addEventListener('click', (e) => {
     e.preventDefault();
 
-    let displayWatchlist = [];
+    const displayWatchlist = [];
 
     displayWatchlist.push(displayMoviesHtml);
 
-    console.log('Added to watchlist');
-    console.log(displayWatchlist);
+    const storedWatchlist = localStorage.setItem('movie', JSON.stringify(displayMoviesHtml));
+    console.log('Local Test', storedWatchlist);
+
     document.getElementById('watchlist').innerHTML = displayWatchlist;
   });
 };
