@@ -1,9 +1,8 @@
 'use strict';
 
-// API Key = 5510309e
-
 const searchInput = document.getElementById('search-input');
 
+// Calls to OMdb API
 const getMovies = async (e) => {
   e.preventDefault();
 
@@ -13,9 +12,7 @@ const getMovies = async (e) => {
   console.log(data);
   displayMovies(data);
 };
-
-searchInput.addEventListener('keyup', getMovies);
-
+// Displays movies from API database
 const displayMovies = (movies) => {
   let displayMoviesHtml = '';
 
@@ -38,17 +35,12 @@ const displayMovies = (movies) => {
     `;
 
   document.getElementById('search-list').innerHTML = displayMoviesHtml;
-  document.getElementById('watchlist-btn').addEventListener('click', (e) => {
-    e.preventDefault();
 
-    const displayWatchlist = [];
+  document.getElementById('watchlist-btn').addEventListener('click', () => {
+    localStorage.setItem('movie', JSON.stringify(displayMoviesHtml));
 
-    displayWatchlist.push(displayMoviesHtml);
-
-    const storedWatchlist = localStorage.setItem('movie', JSON.stringify(displayMoviesHtml));
-    console.log('Local Test', storedWatchlist);
-
-    document.getElementById('watchlist').innerHTML = displayWatchlist;
+    const test = localStorage.getItem('movie');
+    console.log('Testing Local Storage', test);
   });
 };
 
